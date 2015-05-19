@@ -6,7 +6,10 @@
  * Date: 19/05/15
  * Time: 09:53
  */
-class Conexao
+
+require_once "ConexaoInterface.php";
+
+class Conexao implements ConexaoInterface
 {
     private $host;
     private $db;

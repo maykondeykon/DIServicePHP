@@ -6,7 +6,10 @@
  * Date: 19/05/15
  * Time: 11:28
  */
-class ConexaoDSN
+
+require_once "ConexaoInterface.php";
+
+class ConexaoDSN implements ConexaoInterface
 {
     private $dsn;
     private $user;
@@ -19,7 +22,7 @@ class ConexaoDSN
         $this->password = $password;
     }
 
-    public function conectar()
+    public function connect()
     {
         return new \PDO($this->dsn, $this->user, $this->password);
     }
