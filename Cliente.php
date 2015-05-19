@@ -7,15 +7,14 @@
  * Time: 10:32
  */
 
-require_once "Conexao.php";
 
 class Cliente
 {
     private $db;
 
-    public function __construct()
+    public function __construct($host, $dbname, $user, $password)
     {
-        $conexao = new Conexao("localhost", "diservice", "root", "");
+        $conexao = new Conexao($host, $dbname, $user, $password);
         $this->db = $conexao->connect();
     }
 
