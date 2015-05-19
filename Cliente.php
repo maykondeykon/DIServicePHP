@@ -7,7 +7,7 @@
  * Time: 10:32
  */
 
-require_once "conexao.php";
+require_once "Conexao.php";
 
 class Cliente
 {
