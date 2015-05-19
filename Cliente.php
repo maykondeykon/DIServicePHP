@@ -12,9 +12,8 @@ class Cliente
 {
     private $db;
 
-    public function __construct($host, $dbname, $user, $password)
+    public function __construct($conexao)
     {
-        $conexao = new Conexao($host, $dbname, $user, $password);
         $this->db = $conexao->connect();
     }
 
