@@ -26,8 +26,3 @@ class Conexao
         return new \PDO("mysql:host={$this->host};dbname={$this->db}", $this->user, $this->password);
     }
 }
-//$host = "localhost";
-//$db = "diservice";
-//$user = "root";
-//$password = "";
-
