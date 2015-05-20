@@ -6,8 +6,7 @@
  * Date: 19/05/15
  * Time: 09:53
  */
-
-require_once "ConexaoInterface.php";
+namespace SON;
 
 class Conexao implements ConexaoInterface
 {
