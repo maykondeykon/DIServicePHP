@@ -7,13 +7,10 @@
  */
 
 require_once "Conexao.php";
-require_once "ConexaoDSN.php";
 require_once "Cliente.php";
+require_once "Container.php";
 
-$conexao = new Conexao("localhost", "diservice", "root", "");
-$conexaoDSN = new ConexaoDSN("mysql:host=localhost;dbname=diservice", "root", "");
-
-$cliente = new Cliente($conexao);
+$cliente = Container::getCliente();
 $listaCliente = $cliente->listar();
 
 require_once "clientes.list.php";
